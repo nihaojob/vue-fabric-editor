@@ -12,14 +12,13 @@ import ptBR from 'view-design/dist/locale/pt-BR';
 import enUS from 'view-design/dist/locale/pt-BR';
 import zhCN from 'view-design/dist/locale/pt-BR';
 
-let locale = zhCN;
-if(i18n.locale === 'pt') {
-  locale = ptBR;
-} else if (i18n.locale === 'en') {
-  locale = enUS;
+const LANGMAP = {
+  'ch': zhCN,
+  'pt': ptBR,
+  'en': enUS
 }
 
-Vue.use(ViewUI, { locale });
+Vue.use(ViewUI, { locale: LANGMAP[i18n.locale] || zhCN });
 Vue.use(VueClipboard);
 Vue.use(svgIcon);
 
