@@ -25,6 +25,7 @@ module.exports = {
     'comma-spacing': 'off',
     'vuejs-accessibility/click-events-have-key-events': 'off',
     'max-len': 'off',
+    ecmaVersion: 'off',
     'no-unused-expressions': 'off', // 17
     'linebreak-style': 'off',
     'vuejs-accessibility/anchor-has-content': 'off',

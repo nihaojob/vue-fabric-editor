@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2048px" height="2048px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2048 2048"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil3 {fill:none}
+    .fil2 {fill:#26A69A;fill-rule:nonzero}
+    .fil1 {fill:#7AC7BD;fill-rule:nonzero}
+    .fil0 {fill:#88D1C8;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_438069920">
+   <g>
+    <path class="fil0" d="M1372 1811l-348 0 -348 0 -34 0 2 -34c16,-240 7,-402 -20,-539 -28,-138 -74,-253 -133,-398l-9 -23 20 -15c50,-36 98,-78 135,-125 36,-45 61,-94 67,-148l62 -7c10,26 33,50 63,70 35,23 78,39 121,47l15 3 8 13 52 89 52 -89 8 -13 15 -3c43,-7 86,-24 121,-47 30,-20 54,-44 63,-70l62 7c7,53 32,103 67,148 37,47 85,88 135,125l20 15 -9 23c-59,145 -106,259 -133,398 -28,138 -36,300 -20,539l2 34 -34 0z"/>
+    <polygon class="fil0" points="1404,250 1339,562 1276,549 1341,237 "/>
+    <polygon class="fil0" points="706,237 771,549 709,562 643,250 "/>
+   </g>
+   <path class="fil1" d="M1024 1811l-348 0 -34 0 2 -34c16,-240 7,-402 -20,-539 -28,-138 -74,-253 -133,-398l-9 -23 20 -15c50,-36 98,-78 135,-125 36,-45 61,-94 67,-148l62 -7c10,26 33,50 63,70 35,23 78,39 121,47l15 3 8 13 52 89 0 1067z"/>
+   <polygon class="fil0" points="1404,250 1339,562 1276,549 1341,237 "/>
+   <polygon class="fil1" points="706,237 771,549 709,562 643,250 "/>
+   <path class="fil2" d="M775 541c9,18 33,42 71,63 29,16 66,30 109,35l8 1 4 7 56 94 54 -92 4 -7 8 -1c43,-5 80,-19 109,-35 37,-21 62,-46 71,-63l29 14c-11,22 -41,53 -84,77 -31,17 -69,32 -113,38l-77 125 -80 -127c-44,-6 -82,-21 -113,-38 -43,-24 -73,-54 -84,-77l29 -14z"/>
+  </g>
+  <rect class="fil3" width="2048" height="2048"/>
+ </g>
+</svg>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2048px" height="2048px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2048 2048"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil5 {fill:none}
+    .fil0 {fill:#D85883}
+    .fil4 {fill:#FCE4EC}
+    .fil2 {fill:#F06292;fill-rule:nonzero}
+    .fil1 {fill:#F48FB1;fill-rule:nonzero}
+    .fil3 {fill:#FCE4EC;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" x="691" y="1023" width="667" height="75"/>
+  <polygon class="fil1" points="1362,1043 1442,1703 1445,1731 1417,1738 1184,1791 1154,1798 1146,1768 1024,1279 902,1768 895,1797 865,1791 605,1738 575,1732 580,1702 687,1043 1015,1043 1015,1097 1034,1097 1034,1043 "/>
+  <path class="fil2" d="M864 1791l-10 -2 171 -642 0 39 -161 606zm-31 -6l-20 -4 193 -725 8 2 0 40 1 0 -183 687zm-39 -8l-10 -2 194 -727 10 3 -194 727zm-25 -5l-20 -4 193 -724 19 0 1 0 -194 728zm-39 -8l-10 -2 191 -718 10 0 -192 720zm-28 -6l-20 -4 189 -711 21 0 -190 715zm-39 -8l-10 -2 188 -705 10 0 -188 707zm-33 -7l-20 -4 185 -696 21 0 -186 700zm-39 -8l-10 -2 184 -690 10 0 -184 692zm2 -114l32 -198 101 -380 21 0 -154 578zm64 -394l16 -99 23 -85 10 0 -49 184z"/>
+  <path class="fil2" d="M1383 1219l9 71 -66 -246 10 0 47 175zm25 211l17 141 -141 -528 21 0 103 386zm32 267l1 7 3 28 -5 1 -184 -689 10 0 174 653zm-20 41l-4 1 -16 4 -186 -698 21 0 185 694zm-43 10l-10 2 -188 -706 10 0 187 703zm-29 7l-19 4 -190 -714 21 0 189 710zm-38 9l-10 2 -192 -721 10 0 191 719zm-29 7l-19 4 -194 -730 21 0 193 725zm-34 8l-10 2 -196 -735 10 0 195 733zm-29 7l-19 4 -173 -651 0 -40 7 0 0 -10 185 696zm-41 9l-10 2 -142 -534 0 -39 152 571z"/>
+  <path class="fil1" d="M886 288c0,46 16,88 41,118 24,28 58,46 94,46 37,0 70,-18 94,-46 26,-30 41,-71 41,-118l0 -32 32 0c28,0 34,0 41,0 100,-1 131,-1 210,64l1 1 217 195 21 19 -16 23 -109 159 -17 25 -26 -16 -138 -84c-28,72 -42,140 -17,343l5 39 -326 0 0 0 -19 0 0 0 -325 0 9 -54c33,-201 5,-266 -26,-329l-140 85 -26 16 -17 -26 -105 -159 -15 -23 20 -18 217 -199 0 0c67,-62 100,-62 187,-61 17,0 36,0 59,0l33 -1 0 32z"/>
+  <path class="fil3" d="M1624 615l-29 42c-16,0 -30,-14 -30,-30 0,-17 14,-30 30,-30 13,0 23,8 28,19z"/>
+  <circle class="fil4" cx="844" cy="847" r="30"/>
+  <circle class="fil4" cx="1018" cy="806" r="30"/>
+  <circle class="fil4" cx="1072" cy="620" r="30"/>
+  <circle class="fil4" cx="1234" cy="521" r="30"/>
+  <circle class="fil4" cx="1155" cy="454" r="30"/>
+  <circle class="fil4" cx="985" cy="943" r="21"/>
+  <circle class="fil4" cx="1147" cy="843" r="21"/>
+  <circle class="fil4" cx="943" cy="583" r="21"/>
+  <circle class="fil4" cx="1105" cy="483" r="21"/>
+  <circle class="fil4" cx="1008" cy="874" r="17"/>
+  <circle class="fil4" cx="1170" cy="775" r="17"/>
+  <circle class="fil4" cx="920" cy="652" r="17"/>
+  <circle class="fil4" cx="1082" cy="552" r="17"/>
+  <circle class="fil4" cx="1109" cy="843" r="12"/>
+  <circle class="fil4" cx="1271" cy="743" r="12"/>
+  <circle class="fil4" cx="819" cy="683" r="12"/>
+  <circle class="fil4" cx="981" cy="583" r="12"/>
+  <circle class="fil4" cx="939" cy="840" r="8"/>
+  <circle class="fil4" cx="1101" cy="740" r="8"/>
+  <circle class="fil4" cx="989" cy="686" r="8"/>
+  <circle class="fil4" cx="1151" cy="587" r="8"/>
+  <circle class="fil4" cx="985" cy="764" r="4"/>
+  <circle class="fil4" cx="1147" cy="664" r="4"/>
+  <circle class="fil4" cx="943" cy="762" r="4"/>
+  <circle class="fil4" cx="1105" cy="663" r="4"/>
+  <circle class="fil4" cx="1210" cy="664" r="30"/>
+  <circle class="fil4" cx="1426" cy="379" r="30"/>
+  <circle class="fil4" cx="901" cy="747" r="21"/>
+  <circle class="fil4" cx="1297" cy="342" r="21"/>
+  <circle class="fil4" cx="1217" cy="274" r="21"/>
+  <circle class="fil4" cx="1362" cy="633" r="17"/>
+  <circle class="fil4" cx="1274" cy="410" r="17"/>
+  <circle class="fil4" cx="1194" cy="343" r="17"/>
+  <circle class="fil4" cx="1463" cy="602" r="12"/>
+  <circle class="fil4" cx="1173" cy="442" r="12"/>
+  <circle class="fil4" cx="1293" cy="599" r="8"/>
+  <circle class="fil4" cx="1214" cy="531" r="8"/>
+  <circle class="fil4" cx="1343" cy="445" r="8"/>
+  <circle class="fil4" cx="1263" cy="378" r="8"/>
+  <circle class="fil4" cx="1339" cy="523" r="4"/>
+  <circle class="fil4" cx="1259" cy="455" r="4"/>
+  <circle class="fil4" cx="1297" cy="521" r="4"/>
+  <circle class="fil4" cx="1217" cy="454" r="4"/>
+  <circle class="fil4" cx="870" cy="950" r="30"/>
+  <circle class="fil4" cx="1564" cy="488" r="30"/>
+  <circle class="fil4" cx="801" cy="752" r="21"/>
+  <circle class="fil4" cx="1434" cy="450" r="21"/>
+  <circle class="fil4" cx="747" cy="953" r="17"/>
+  <circle class="fil4" cx="1411" cy="519" r="17"/>
+  <circle class="fil4" cx="1534" cy="720" r="12"/>
+  <circle class="fil4" cx="1310" cy="550" r="12"/>
+  <circle class="fil4" cx="1231" cy="483" r="12"/>
+  <circle class="fil4" cx="1431" cy="707" r="8"/>
+  <circle class="fil4" cx="1480" cy="553" r="8"/>
+  <circle class="fil4" cx="1476" cy="631" r="4"/>
+  <circle class="fil4" cx="1434" cy="629" r="4"/>
+  <circle class="fil4" cx="1216" cy="966" r="30"/>
+  <circle class="fil4" cx="1111" cy="960" r="21"/>
+  <circle class="fil4" cx="1303" cy="644" r="21"/>
+  <circle class="fil4" cx="1015" cy="990" r="17"/>
+  <circle class="fil4" cx="1280" cy="713" r="17"/>
+  <circle class="fil4" cx="1315" cy="1011" r="12"/>
+  <circle class="fil4" cx="1179" cy="744" r="12"/>
+  <circle class="fil4" cx="1299" cy="901" r="8"/>
+  <circle class="fil4" cx="1293" cy="782" r="8"/>
+  <circle class="fil4" cx="1345" cy="825" r="4"/>
+  <circle class="fil4" cx="1303" cy="823" r="4"/>
+  <circle class="fil4" cx="641" cy="606" r="30"/>
+  <circle class="fil4" cx="855" cy="354" r="30"/>
+  <circle class="fil4" cx="770" cy="643" r="21"/>
+  <circle class="fil4" cx="728" cy="283" r="21"/>
+  <circle class="fil4" cx="793" cy="575" r="17"/>
+  <circle class="fil4" cx="705" cy="352" r="17"/>
+  <circle class="fil4" cx="894" cy="543" r="12"/>
+  <circle class="fil4" cx="598" cy="424" r="12"/>
+  <circle class="fil4" cx="724" cy="540" r="8"/>
+  <circle class="fil4" cx="774" cy="387" r="8"/>
+  <circle class="fil4" cx="770" cy="464" r="4"/>
+  <circle class="fil4" cx="728" cy="463" r="4"/>
+  <circle class="fil4" cx="433" cy="591" r="30"/>
+  <circle class="fil4" cx="634" cy="350" r="30"/>
+  <circle class="fil4" cx="547" cy="673" r="21"/>
+  <circle class="fil4" cx="650" cy="478" r="21"/>
+  <circle class="fil4" cx="570" cy="604" r="17"/>
+  <circle class="fil4" cx="480" cy="465" r="17"/>
+  <circle class="fil4" cx="671" cy="573" r="12"/>
+  <circle class="fil4" cx="445" cy="529" r="12"/>
+  <circle class="fil4" cx="501" cy="569" r="8"/>
+  <circle class="fil4" cx="551" cy="416" r="8"/>
+  <circle class="fil4" cx="547" cy="493" r="4"/>
+  <circle class="fil4" cx="505" cy="492" r="4"/>
+  <circle class="fil4" cx="751" cy="852" r="21"/>
+  <rect class="fil5" width="2048" height="2048"/>
+ </g>
+</svg>

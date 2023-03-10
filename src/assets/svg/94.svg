@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2048px" height="2048px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2048 2048"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil6 {fill:none}
+    .fil5 {fill:#424242}
+    .fil0 {fill:#424242;fill-rule:nonzero}
+    .fil2 {fill:#DECBAB;fill-rule:nonzero}
+    .fil4 {fill:#E0C39C;fill-rule:nonzero}
+    .fil1 {fill:#E4D1B1;fill-rule:nonzero}
+    .fil3 {fill:#E6C9A2;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="992,1760 992,1350 1056,1350 1056,1760 "/>
+  <g id="_415081400">
+   <path class="fil1" d="M677 1374c-5,-20 -8,-54 -9,-88 -2,-38 -1,-77 1,-100l0 -2c6,-39 17,-81 29,-126 36,-143 80,-314 -12,-406l-9 -9 0 -13 0 -160 0 -32 32 0c40,0 78,-17 106,-45 28,-28 45,-65 45,-106l0 -32 32 0 267 0 32 0 0 32c0,40 17,78 45,106 28,28 65,45 106,45l32 0 0 32 0 160 0 13 -9 9c-92,92 -49,263 -12,406 11,45 22,87 29,126l0 2c2,23 3,62 1,100 -1,34 -4,68 -9,88l-6 25 -25 0 -317 0 -315 0 -25 0 -6 -25z"/>
+   <path class="fil2" d="M680 1132c5,-23 12,-48 18,-73 36,-143 80,-314 -12,-406l-9 -9 0 -1c167,85 72,398 4,490z"/>
+   <path class="fil2" d="M1367 1132c-5,-23 -12,-48 -18,-73 -36,-143 -80,-314 12,-406l9 -9 0 -1c-167,85 -72,398 -4,490z"/>
+  </g>
+  <g id="_415080392">
+   <path class="fil3" d="M677 1374c-5,-20 -8,-54 -9,-88 -2,-38 -1,-77 1,-100l0 -2c6,-39 17,-81 29,-126 36,-143 80,-314 -12,-406l-9 -9 0 -13 0 -160 0 -32 32 0c40,0 78,-17 106,-45 28,-28 45,-65 45,-106l0 -32 32 0 122 0 0 1143 -304 0 -25 0 -6 -25z"/>
+   <path class="fil4" d="M680 1132c5,-23 12,-48 18,-73 36,-143 80,-314 -12,-406l-9 -9 0 -1c167,85 72,398 4,490z"/>
+  </g>
+  <ellipse class="fil5" cx="1024" cy="1750" rx="255" ry="44"/>
+  <rect class="fil6" width="2048" height="2048"/>
+ </g>
+</svg>

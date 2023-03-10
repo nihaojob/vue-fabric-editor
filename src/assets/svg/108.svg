@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2048px" height="2048px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2048 2048"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil8 {fill:none}
+    .fil6 {fill:#CF487F}
+    .fil2 {fill:#FF59AE}
+    .fil7 {fill:#7A2541;fill-rule:nonzero}
+    .fil3 {fill:#7D2350;fill-rule:nonzero}
+    .fil4 {fill:#8C2F4F;fill-rule:nonzero}
+    .fil0 {fill:#993366;fill-rule:nonzero}
+    .fil5 {fill:#CF487F;fill-rule:nonzero}
+    .fil1 {fill:#FF59AE;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_240483808">
+   <path class="fil0" d="M682 634c88,-88 207,-142 342,-142 135,0 255,55 344,143 90,90 147,215 154,353 6,119 38,231 83,321 47,93 107,161 166,185 12,4 21,16 21,30 0,18 -14,32 -32,32l-1472 0 0 0c-11,0 -22,-6 -28,-17 -8,-15 -3,-35 13,-43 47,-25 113,-110 166,-217 46,-91 82,-197 87,-292 8,-138 65,-263 155,-354z"/>
+   <path class="fil1" d="M1618 1334c16,28 33,54 50,76 -7,25 -30,43 -57,43 -33,0 -59,-27 -59,-59 0,-33 27,-59 59,-59 2,0 5,0 7,0z"/>
+   <path class="fil1" d="M1105 498c35,6 69,16 101,29 1,4 1,8 1,12 0,33 -27,59 -59,59 -33,0 -59,-27 -59,-59 0,-16 6,-30 16,-41z"/>
+   <path class="fil1" d="M517 1060c5,-25 8,-49 9,-73 1,-15 2,-30 4,-44 26,7 44,30 44,57 0,32 -26,59 -58,59z"/>
+   <circle class="fil2" cx="572" cy="1224" r="59"/>
+   <circle class="fil2" cx="864" cy="1136" r="59"/>
+   <circle class="fil2" cx="1259" cy="718" r="59"/>
+   <circle class="fil2" cx="1130" cy="1293" r="59"/>
+   <circle class="fil2" cx="912" cy="614" r="59"/>
+   <circle class="fil2" cx="1053" cy="884" r="59"/>
+   <circle class="fil2" cx="1199" cy="1061" r="59"/>
+   <circle class="fil2" cx="1374" cy="884" r="59"/>
+   <circle class="fil2" cx="770" cy="920" r="59"/>
+   <circle class="fil2" cx="1478" cy="1132" r="59"/>
+   <circle class="fil2" cx="697" cy="705" r="59"/>
+   <circle class="fil2" cx="1372" cy="1341" r="59"/>
+   <circle class="fil2" cx="776" cy="1349" r="59"/>
+   <circle class="fil2" cx="505" cy="1436" r="59"/>
+   <circle class="fil2" cx="1034" cy="1478" r="59"/>
+   <path class="fil3" d="M1777 1497c9,6 15,16 15,27 0,18 -14,32 -32,32l-1472 0 0 0c-11,0 -22,-6 -28,-17 -8,-15 -3,-34 12,-43l1505 0z"/>
+  </g>
+  <g id="_240481768">
+   <path class="fil4" d="M1024 492c135,0 255,55 344,143 90,90 147,215 154,353 6,119 38,231 83,321 47,93 107,161 166,185 12,4 21,16 21,30 0,18 -14,32 -32,32l-736 0 0 -1065z"/>
+   <path class="fil5" d="M1618 1334c16,28 33,54 50,76 -7,25 -30,43 -57,43 -33,0 -59,-27 -59,-59 0,-33 27,-59 59,-59 2,0 5,0 7,0z"/>
+   <path class="fil5" d="M1105 498c35,6 69,16 101,29 1,4 1,8 1,12 0,33 -27,59 -59,59 -33,0 -59,-27 -59,-59 0,-16 6,-30 16,-41z"/>
+   <path class="fil6" d="M1259 777c-33,0 -59,-27 -59,-59 0,-33 27,-59 59,-59 33,0 59,27 59,59 0,33 -27,59 -59,59z"/>
+   <path class="fil6" d="M1130 1233c33,0 59,27 59,59 0,33 -27,59 -59,59 -33,0 -59,-27 -59,-59 0,-33 27,-59 59,-59z"/>
+   <path class="fil6" d="M1053 825c33,0 59,27 59,59 0,33 -27,59 -59,59 -11,0 -21,-3 -29,-8l0 -103c9,-5 19,-8 29,-8z"/>
+   <path class="fil6" d="M1199 1121c-33,0 -59,-27 -59,-59 0,-33 27,-59 59,-59 33,0 59,27 59,59 0,33 -27,59 -59,59z"/>
+   <path class="fil6" d="M1374 825c33,0 59,27 59,59 0,33 -27,59 -59,59 -33,0 -59,-27 -59,-59 0,-33 27,-59 59,-59z"/>
+   <path class="fil6" d="M1478 1073c33,0 59,27 59,59 0,33 -27,59 -59,59 -33,0 -59,-27 -59,-59 0,-33 27,-59 59,-59z"/>
+   <path class="fil6" d="M1372 1281c33,0 59,27 59,59 0,33 -27,59 -59,59 -33,0 -59,-27 -59,-59 0,-33 27,-59 59,-59z"/>
+   <path class="fil6" d="M1034 1419c33,0 59,27 59,59 0,33 -27,59 -59,59 -4,0 -7,0 -10,-1l0 -117c3,-1 7,-1 10,-1z"/>
+   <path class="fil7" d="M1777 1497c9,6 15,16 15,27 0,18 -14,32 -32,32l-736 0 0 -59 753 0z"/>
+  </g>
+  <rect class="fil8" width="2048" height="2048"/>
+ </g>
+</svg>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2048px" height="2048px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2048 2048"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil5 {fill:none}
+    .fil4 {fill:#87755B;fill-rule:nonzero}
+    .fil1 {fill:#998567;fill-rule:nonzero}
+    .fil3 {fill:#A28E75;fill-rule:nonzero}
+    .fil0 {fill:#B9A688;fill-rule:nonzero}
+    .fil2 {fill:#C7BCA2;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M952 863l192 -117 0 0c1,0 2,-1 2,-1 16,-8 35,-1 43,15 11,22 35,41 67,57 55,27 131,43 206,47 74,3 145,-6 191,-29 20,-10 34,-22 41,-35l0 0c3,-6 7,-10 13,-14 15,-9 35,-3 43,12 49,88 61,169 54,250 -7,79 -32,155 -60,236 -4,14 -16,24 -31,24l-1259 0c-116,0 -174,-40 -199,-96 -11,-24 -15,-51 -14,-78 1,-26 7,-51 14,-75 24,-74 80,-135 104,-135l0 0 21 0c216,0 473,0 570,-59z"/>
+  <path class="fil1" d="M1219 794c11,8 23,16 37,23 20,10 42,18 66,25l-229 111 -85 -35 210 -123z"/>
+  <path class="fil2" d="M1447 918c-345,29 -596,89 -823,326l181 1c232,-234 281,-224 642,-327z"/>
+  <path class="fil3" d="M276 1245c-9,-10 -16,-22 -21,-34 -11,-24 -15,-51 -14,-78 1,-26 7,-51 14,-75 24,-74 80,-135 104,-135l0 0 9 0c-86,37 -30,113 180,97 85,-6 150,21 175,56 30,41 -6,170 -44,227 -89,-1 -129,7 -212,-7 -73,-12 -140,-29 -192,-51z"/>
+  <path class="fil4" d="M1758 1243c-4,13 -9,26 -13,40 -4,14 -16,24 -31,24l-1259 0c-91,0 -147,-25 -179,-63l1483 0z"/>
+  <rect class="fil5" width="2048" height="2048"/>
+ </g>
+</svg>

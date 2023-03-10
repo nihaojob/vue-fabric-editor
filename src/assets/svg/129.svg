@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2048px" height="2048px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2048 2048"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil6 {fill:none}
+    .fil5 {fill:#2D8A81}
+    .fil2 {fill:#004D40;fill-rule:nonzero}
+    .fil4 {fill:#00695C;fill-rule:nonzero}
+    .fil1 {fill:#17544D;fill-rule:nonzero}
+    .fil0 {fill:#44ABA1;fill-rule:nonzero}
+    .fil3 {fill:#4DB6AC;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_440856288">
+   <path class="fil0" d="M1537 427c45,50 96,194 122,261 26,69 47,133 64,200 20,79 35,225 46,384 11,162 18,325 24,488 -85,0 -170,0 -256,0l-37 -772 -17 -43 -44 -110c-25,-185 39,-336 97,-409z"/>
+   <path class="fil0" d="M608 836l-43 109 -17 44 -35 741 -1 31 -30 0 -192 0 -33 0 1 -33c5,-128 12,-299 23,-454 11,-159 25,-305 46,-384 17,-67 38,-132 64,-200 26,-68 57,-140 94,-221 3,-6 6,-12 10,-18 5,-8 11,-15 18,-22 55,83 115,238 97,409z"/>
+   <path class="fil1" d="M909 356c39,-10 77,-15 114,-14 37,0 72,6 107,14l-2 433c-31,-7 -61,-12 -93,-12 -31,0 -64,3 -97,12l-29 -432z"/>
+   <path class="fil2" d="M913 302c39,-10 77,-15 114,-14 37,0 72,6 107,14l-15 62c-31,-7 -61,-12 -93,-12 -31,0 -64,3 -97,12l-16 -62z"/>
+   <path class="fil3" d="M847 340c8,-3 71,143 116,183l60 237 49 -202 41 -171 15 -34c3,-7 78,-9 75,-17 75,11 170,19 241,41 35,11 68,27 92,50 -38,84 -96,239 -97,409l0 -1 0 669 0 32 -32 0 -384 0 -384 0 -32 0 0 -32 0 -669 0 0c0,-170 -58,-324 -97,-409 24,-23 57,-39 92,-50 71,-22 169,-29 244,-37z"/>
+   <path class="fil4" d="M1126 300c12,2 22,4 31,5 50,7 54,8 77,73l59 167 22 62 -63 -21 -168 -57 -25 -9 4 -26 25 -167 5 -34 33 7z"/>
+   <path class="fil4" d="M892 305c8,-1 19,-3 31,-5l33 -7 5 33 25 165 4 26 -25 9 -168 60 -63 22 22 -63 59 -167c23,-65 27,-65 77,-73z"/>
+   <rect class="fil5" x="608" y="1530" width="832" height="38"/>
+  </g>
+  <rect class="fil6" width="2048" height="2048"/>
+ </g>
+</svg>

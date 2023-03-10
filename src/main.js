@@ -3,7 +3,7 @@ import axios from 'axios';
 import ViewUI from 'view-design';
 import VueClipboard from 'vue-clipboard2';
 import VueLazyload from 'vue-lazyload';
-import svgIcon from '@/components/svgIcon/index';
+// import svgIcon from '@/components/svgIcon/index';
 import 'view-design/dist/styles/iview.css';
 import '@/assets/fonts/font.css';
 
@@ -24,13 +24,13 @@ const LANGMAP = {
 Vue.use(ViewUI, { locale: LANGMAP[i18n.locale] || zhCN });
 Vue.use(VueClipboard);
 Vue.use(VueLazyload);
-Vue.use(svgIcon);
+// Vue.use(svgIcon);
 
 Vue.prototype.$http = axios;
 Vue.config.productionTip = false;
 
 new Vue({
-  router,
   i18n,
+  router,
   render: (h) => h(App),
 }).$mount('#app');

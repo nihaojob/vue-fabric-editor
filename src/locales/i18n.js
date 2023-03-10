@@ -2,9 +2,12 @@ import Vue from 'vue';
 import VueI18n from 'vue-i18n';
 import { getLocal, setLocal } from '@/utils/local';
 import { LANG } from '@/config/constants/app';
-
+/* eslint-disable */
 Vue.use(VueI18n);
-
+/* eslint-disable */
+import en from './lang/en.json';
+import zh from './lang/zh.json';
+import pt from './lang/pt.json';
 function loadLocaleMessages() {
   const locales = require.context('@/locales/lang/', true, /[A-Za-z0-9-_,\s]+\.json$/i);
   const messages = {};
@@ -33,9 +36,12 @@ function getLocalLang() {
   return localLang;
 }
 const lang = getLocalLang();
-console.log(lang);
 export default new VueI18n({
   locale: lang,
   fallbackLocale: lang,
-  messages: loadLocaleMessages(),
+  messages: {
+    en: en,
+    zh: zh,
+    pt: pt,
+  },
 });

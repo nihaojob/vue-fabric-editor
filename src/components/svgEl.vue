@@ -265,8 +265,16 @@ export default {
     },
     dragItem(event) {
       const url = event.target.src;
-      // 会有性能开销 dragAddItem复用更简洁
-      this.fabric.loadSVGFromURL(url, (objects) => {
+      const { left, top, right, bottom } = this.canvas.c
+        .getSelectionElement()
+        .getBoundingClientRect();
+      if (event.x < left || event.y < top) return;
+      const point = {
+        x: event.x - left,
+        y: event.y - top,
+      };
+      const pointerVpt = this.canvas.c.restorePointerVpt(point);
+      this.fabric.loadSVGFromURL(url, (objects, options) => {
         const item = this.fabric.util.groupSVGElements(objects, {
           shadow: '',
           fontFamily: 'arial',

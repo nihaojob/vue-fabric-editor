@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2048px" height="2048px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2048 2048"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil4 {fill:none}
+    .fil2 {fill:#01579B}
+    .fil0 {fill:#D07D18}
+    .fil3 {fill:#E86309}
+    .fil1 {fill:#FF9100}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_440854008">
+   <path class="fil0" d="M881 416c90,44 196,43 287,0l-6 245 -271 0 -10 -245z"/>
+   <polygon class="fil1" points="640,449 872,449 889,449 899,463 1024,654 1149,463 1159,449 1176,449 1408,449 1426,454 1778,686 1804,704 1787,730 1630,968 1613,994 1587,978 1440,889 1440,1601 1440,1633 1408,1633 640,1633 608,1633 608,1601 608,889 461,978 435,994 418,968 261,730 244,704 270,686 623,454 "/>
+   <polygon class="fil2" points="1216,1633 1216,849 1280,849 1280,1633 "/>
+   <polygon class="fil2" points="1088,1633 1088,926 1152,926 1152,1633 "/>
+   <rect class="fil3" transform="matrix(0.521287 -0.288406 0.536341 0.888097 815.304 452.057)" width="128" height="285"/>
+   <rect class="fil3" transform="matrix(-0.521287 -0.288406 -0.536341 0.888097 1232.7 452.057)" width="128" height="285"/>
+  </g>
+  <rect class="fil4" width="2048" height="2048"/>
+ </g>
+</svg>
