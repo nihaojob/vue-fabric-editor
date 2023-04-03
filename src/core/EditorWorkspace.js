@@ -120,7 +120,7 @@ class EditorWorkspace {
     this.canvas.setWidth(width);
     this.canvas.setHeight(height);
     const center = this.canvas.getCenter();
-    this.canvas.setViewportTransform([1, 0, 0, 1, 0, 0]);
+    this.canvas.setViewportTransform(fabric.iMatrix.concat());
     this.canvas.zoomToPoint(new fabric.Point(center.left, center.top), scale);
     this.canvas.centerObject(this.workspace);
     this.canvas.renderAll();
@@ -173,45 +173,52 @@ class EditorWorkspace {
 
   // 拖拽模式
   _initDring() {
-    const This = this;
-    this.canvas.on('mouse:down', function (opt) {
+    let vpt = undefined;
+    // const This = this;
+    let lastPosX = undefined;
+    let lastPosY = undefined;
+    this.canvas.on('mouse:down', (opt) => {
       const evt = opt.e;
-      if (evt.altKey === true) {
-        this.defaultCursor = 'grab';
-        This._setDring();
-        this.selection = false;
+      if (evt.altKey === true || opt.button === 2) {
+        this._setDring();
         this.isDragging = true;
-        this.lastPosX = evt.clientX;
-        this.lastPosY = evt.clientY;
-        this.requestRenderAll();
+        // 浅拷贝
+        vpt = { ...this.canvas.viewportTransform };
+        lastPosX = evt.clientX;
+        lastPosY = evt.clientY;
       }
     });
 
-    this.canvas.on('mouse:move', function (opt) {
-      if (this.isDragging) {
-        this.defaultCursor = 'grabbing';
+    this.canvas.on('mouse:move', (opt) => {
+      if (this.isDragging && vpt && lastPosX && lastPosY) {
+        this.canvas.defaultCursor = 'grabbing';
         const { e } = opt;
-        const vpt = this.viewportTransform;
-        vpt[4] += e.clientX - this.lastPosX;
-        vpt[5] += e.clientY - this.lastPosY;
-        this.lastPosX = e.clientX;
-        this.lastPosY = e.clientY;
-        this.requestRenderAll();
+        const deltaX = e.clientX - lastPosX;
+        const deltaY = e.clientY - lastPosY;
+        // ignoreZoom
+        vpt[0] = 1;
+        vpt[3] = 1;
+        const deltaPoint = new fabric.Point(deltaX, deltaY);
+        const newPoint = fabric.util.transformPoint(deltaPoint, vpt).multiplyEquals(-1);
+        this.canvas.absolutePan(newPoint);
       }
     });
 
-    this.canvas.on('mouse:up', function () {
-      this.setViewportTransform(this.viewportTransform);
+    this.canvas.on('mouse:up', () => {
+      this.canvas.setViewportTransform(this.canvas.viewportTransform);
       this.isDragging = false;
-      this.selection = true;
-      this.defaultCursor = 'default';
-      This.workspace.hoverCursor = 'default';
-      this.getObjects().forEach((obj) => {
+      vpt = undefined;
+      lastPosX = undefined;
+      lastPosY = undefined;
+      this.canvas.selection = true;
+      this.canvas.defaultCursor = 'default';
+      this.workspace.hoverCursor = 'default';
+      this.canvas.getObjects().forEach((obj) => {
         if (obj.id !== 'workspace' && obj.hasControls) {
           obj.selectable = true;
         }
       });
-      this.requestRenderAll();
+      this.canvas.requestRenderAll();
     });
 
     this.canvas.on('mouse:wheel', function (opt) {
