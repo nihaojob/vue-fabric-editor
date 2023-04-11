@@ -17,7 +17,7 @@
   "everything_goes_well": "Everything goes well",
   "cartoon": "Cartoon",
   "default_size": "Default Size",
-  "preview":"Preview",
+  "preview": "Preview",
   "empty": "Empty",
   "keep": "Save",
   "copy_to_clipboard": "Copy to clipboard",
@@ -87,8 +87,13 @@
     "insert_picture": "Insert picture",
     "insert_SVG": "Insert SVG",
     "insert_SVGStr": "Insert SVG String",
+    "insert_Border": "Insert Border",
     "insert_SVGStr_placeholder": "Please enter SVG String",
-    "modal_tittle": "Please enter"
+    "modal_tittle": "Please enter",
+    "pattern_modal_title": "Border Setting",
+    "pattern_select": "Select Pattern",
+    "pattern_height": "Pattern Height",
+    "pattern_width": "Pattern Width"
   },
   "history": {
     "revocation": "revocation",

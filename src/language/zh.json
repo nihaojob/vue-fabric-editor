@@ -17,7 +17,7 @@
   "everything_goes_well": "诸事顺遂",
   "cartoon": "卡通",
   "default_size": "预设尺寸",
-  "preview":"预览",
+  "preview": "预览",
   "empty": "清空",
   "keep": "保存",
   "copy_to_clipboard": "复制到剪切板",
@@ -91,8 +91,13 @@
     "insert_picture": "插入图片",
     "insert_SVG": "插入SVG元素",
     "insert_SVGStr": "插入SVG字符",
+    "insert_Border": "插入边框",
     "insert_SVGStr_placeholder": "请输入SVG字符串",
-    "modal_tittle": "请输入"
+    "modal_tittle": "请输入",
+    "pattern_modal_title": "边框设置",
+    "pattern_select": "选择图案",
+    "pattern_height": "图案高度",
+    "pattern_width": "图案宽度"
   },
   "history": {
     "revocation": "撤销",
