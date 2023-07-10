@@ -225,15 +225,22 @@ class EditorWorkspace {
     });
 
     this.canvas.on('mouse:wheel', function (this: fabric.Canvas, opt) {
-      const delta = opt.e.deltaY;
-      let zoom = this.getZoom();
-      zoom *= 0.999 ** delta;
-      if (zoom > 20) zoom = 20;
-      if (zoom < 0.01) zoom = 0.01;
-      const center = this.getCenter();
-      this.zoomToPoint(new fabric.Point(center.left, center.top), zoom);
-      opt.e.preventDefault();
-      opt.e.stopPropagation();
+      const e = opt.e;
+      e.preventDefault();
+      e.stopPropagation();
+      if (e.metaKey || e.ctrlKey) {
+        const delta = e.deltaY;
+        let zoom = this.getZoom();
+        zoom *= 0.99 ** delta;
+        if (zoom > 20) zoom = 20;
+        else if (zoom < 0.01) zoom = 0.01;
+        this.zoomToPoint(opt.pointer!, zoom);
+        return;
+      }
+      const vpt = this.viewportTransform!.slice();
+      vpt[4] -= e.deltaX;
+      vpt[5] -= e.deltaY;
+      this.setViewportTransform(vpt);
     });
   }
 
