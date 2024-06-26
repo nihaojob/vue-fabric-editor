@@ -81,7 +81,8 @@
       "systemSize": "系统推荐尺寸",
       "width": "宽度",
       "height": "高度",
-      "create": "确定"
+      "create": "确定",
+      "checkMsg": "请检查尺寸"
     },
     "importFiles": "导入文件"
   },
