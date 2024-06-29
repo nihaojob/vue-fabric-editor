@@ -230,8 +230,11 @@ class ServersPlugin {
 
   saveSvg() {
     this.editor.hooksEntity.hookSaveBefore.callAsync('', () => {
-      const option = this._getSaveSvgOption();
-      const dataUrl = this.canvas.toSVG(option);
+      const { fontOption, svgOption } = this._getSaveSvgOption();
+      fabric.fontPaths = {
+        ...fontOption,
+      };
+      const dataUrl = this.canvas.toSVG(svgOption);
       const fileStr = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(dataUrl)}`;
       this.editor.hooksEntity.hookSaveAfter.callAsync(fileStr, () => {
         downFile(fileStr, 'svg');
@@ -266,15 +269,35 @@ class ServersPlugin {
 
   _getSaveSvgOption() {
     const workspace = this.canvas.getObjects().find((item) => item.id === 'workspace');
+    let fontFamilyArry = this.canvas
+      .getObjects()
+      .filter((item) => item.type == 'textbox')
+      .map((item) => (item as fabric.Text).fontFamily || '');
+    fontFamilyArry = Array.from(new Set(fontFamilyArry));
+
+    const fontList = this.editor.getPlugin('FontPlugin')?.cacheList ?? [];
+
+    const fontEntry: Record<string, string> = {};
+
+    for (const font of fontFamilyArry) {
+      if (font) {
+        const item = fontList.find((item: { name: string }) => item.name === font);
+        fontEntry[font] = item.file;
+      }
+    }
+
     const { left, top, width, height } = workspace as fabric.Object;
     return {
-      width,
-      height,
-      viewBox: {
-        x: left,
-        y: top,
+      fontOption: fontEntry,
+      svgOption: {
         width,
         height,
+        viewBox: {
+          x: left,
+          y: top,
+          width,
+          height,
+        },
       },
     };
   }
@@ -283,6 +306,7 @@ class ServersPlugin {
     const workspace = this.canvas
       .getObjects()
       .find((item: fabric.Object) => item.id === 'workspace');
+
     const { left, top, width, height } = workspace as fabric.Object;
     const option = {
       name: 'New Image',
