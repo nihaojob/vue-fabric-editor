@@ -26,6 +26,7 @@ class WorkspacePlugin implements IPluginTempl {
   ];
   workspaceEl!: HTMLElement;
   workspace: null | fabric.Rect;
+  resizeObserver!: ResizeObserver;
   option: any;
   zoomRatio: number;
   constructor(public canvas: fabric.Canvas, public editor: IEditor) {
@@ -99,7 +100,6 @@ class WorkspacePlugin implements IPluginTempl {
     if (this.canvas.clearHistory) {
       this.canvas.clearHistory();
     }
-    this.auto();
   }
 
   // 返回workspace对象
@@ -129,7 +129,8 @@ class WorkspacePlugin implements IPluginTempl {
         this.auto();
       }, 50)
     );
-    resizeObserver.observe(this.workspaceEl);
+    this.resizeObserver = resizeObserver;
+    this.resizeObserver.observe(this.workspaceEl);
   }
 
   setSize(width: number | undefined, height: number | undefined) {
@@ -143,7 +144,6 @@ class WorkspacePlugin implements IPluginTempl {
     this.workspace.set('width', width);
     this.workspace.set('height', height);
     this.editor.emit('sizeChange', this.workspace.width, this.workspace.height);
-    this.auto();
   }
 
   setZoomAuto(scale: number, cb?: (left?: number, top?: number) => void) {
@@ -224,6 +224,7 @@ class WorkspacePlugin implements IPluginTempl {
   }
 
   destroy() {
+    this.resizeObserver.disconnect();
     console.log('pluginDestroy');
   }
 }
