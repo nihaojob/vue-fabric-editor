@@ -97,4 +97,12 @@ declare namespace fabric {
   export interface StaticCanvas {
     ruler: InstanceType<typeof CanvasRuler>;
   }
+
+  export class EraserBrush {
+    constructor(canvas: Canvas);
+  }
+
+  export interface IRectOptions {
+    [key: string]: unknown;
+  }
 }
