@@ -5,6 +5,8 @@
   "description": "a template project for vue3, ViewUIPlus, TypeScript and Vite.",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "postinstall": "npm run gen-env-types",
+    "gen-env-types": "npx tsx scripts/genEnvTypes.ts || true",
     "serve": "pnpm dev",
     "dev": "vite serve",
     "dev:staging": "vite serve --mode=staging",
@@ -42,6 +44,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
+    "@types/dotenv": "^8.2.0",
     "@types/events": "^3.0.0",
     "@types/fabric": "^5.3.0",
     "@types/fontfaceobserver": "^2.1.3",
@@ -53,6 +56,7 @@
     "@vitejs/plugin-vue": "^4.1.0",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
     "autoprefixer": "^10.4.16",
+    "dotenv": "^16.4.5",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
