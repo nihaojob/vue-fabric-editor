@@ -6,7 +6,7 @@
  * @Description: 边框
 -->
 <template>
-  <div class="box attr-item-box" v-if="mixinState.mSelectMode === 'one'">
+  <div class="box attr-item-box" v-if="mixinState.mSelectMode === 'one' && !isGroup">
     <!-- <h3>边框</h3> -->
     <Divider plain orientation="left"><h4>边框</h4></Divider>
     <!-- 通用属性 -->
@@ -53,7 +53,6 @@
         </Col>
       </Row>
     </div>
-    <!-- <Divider plain></Divider> -->
   </div>
 </template>
 
@@ -64,6 +63,7 @@ import InputNumber from '@/components/inputNumber';
 const update = getCurrentInstance();
 const { mixinState, canvasEditor } = useSelect();
 
+const groupType = ['group'];
 // 属性值
 const baseAttr = reactive({
   stroke: '#fff',
@@ -145,12 +145,15 @@ const strokeDashList = [
     label: 'Dash-8',
   },
 ];
+
+const isGroup = computed(() => groupType.includes(mixinState.mSelectOneType));
 // 属性获取
 const getObjectAttr = (e) => {
   const activeObject = canvasEditor.canvas.getActiveObject();
+
   // 不是当前obj，跳过
   if (e && e.target && e.target !== activeObject) return;
-  if (activeObject) {
+  if (activeObject && !groupType.includes(activeObject.type)) {
     baseAttr.stroke = activeObject.get('stroke');
     baseAttr.strokeWidth = activeObject.get('strokeWidth');
     const strokeDashArray = JSON.stringify(activeObject.get('strokeDashArray') || []);
