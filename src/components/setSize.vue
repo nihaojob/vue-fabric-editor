@@ -12,19 +12,32 @@
     <Divider plain orientation="left">
       <h4>{{ $t('bgSeting.size') }}</h4>
     </Divider>
-    <Form :label-width="40" inline class="form-wrap">
+    <Form :label-width="46" inline class="form-wrap">
       <FormItem :label="$t('bgSeting.width')" prop="name">
-        <InputNumber disabled v-model="width" readonly @on-change="setSize"></InputNumber>
+        <InputNumber
+          disabled
+          v-model="width"
+          readonly
+          @on-change="setSize"
+          :precision="1"
+        ></InputNumber>
       </FormItem>
       <FormItem :label="$t('bgSeting.height')" prop="name">
-        <InputNumber disabled v-model="height" readonly @on-change="setSize"></InputNumber>
+        <InputNumber
+          disabled
+          v-model="height"
+          readonly
+          @on-change="setSize"
+          :precision="1"
+        ></InputNumber>
       </FormItem>
       <FormItem :label-width="0">
-        <Button type="text" @click="showSetSize">
-          <Icon type="md-create" />
-        </Button>
+        {{ unit }}
       </FormItem>
     </Form>
+    <Button type="text" @click="showSetSize">
+      <Icon type="md-create" />
+    </Button>
 
     <!-- <Divider plain></Divider> -->
     <!-- 修改尺寸 -->
@@ -47,6 +60,7 @@ const modalSizeRef = ref(null);
 
 let width = ref(DefaultSize.width);
 let height = ref(DefaultSize.height);
+let unit = ref('px');
 
 onMounted(() => {
   canvasEditor.setSize(width.value, height.value);
@@ -61,11 +75,12 @@ const setSize = () => {
 };
 
 const showSetSize = () => {
-  modalSizeRef.value.showSetSize(width.value, height.value);
+  modalSizeRef.value.showSetSize(width.value, height.value, unit.value);
 };
-const handleConfirm = (w, h) => {
+const handleConfirm = (w, h, u) => {
   width.value = w;
   height.value = h;
+  unit.value = u;
   setSize();
 };
 </script>

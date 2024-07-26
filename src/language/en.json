@@ -31,9 +31,29 @@
   "please_choose": "Please choose",
   "string": "string",
   "file": "file",
+  "importFiles": {
+    "file": "File",
+    "createDesign": {
+      "title": "Create template",
+      "customSize": "Custom Size",
+      "systemSize": "Recommend Size",
+      "width": "Width",
+      "height": "Height",
+      "create": "OK",
+      "checkMsg": "Please, check size"
+    },
+    "importFiles": "Import files"
+  },
   "import_files": "Import files",
   "select_json": "Select JSON",
   "repleaceImg": "repleace Image",
+  "bgSeting": {
+    "size": "Size",
+    "color": "Color",
+    "colorMacthing": "Background",
+    "width": "Width",
+    "height": "Height"
+  },
   "waterMark": {
     "text": "WaterMark",
     "modalTitle": "WaterMark Setting",
