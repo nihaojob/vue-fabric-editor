@@ -15,9 +15,19 @@
       mixinState.mSelectOneType !== 'group'
     "
   >
-    <Divider plain orientation="left"><h4>颜色</h4></Divider>
+    <Divider plain orientation="left">
+      <!-- <h4>颜色 / 纹理</h4> -->
+      <Switch size="large" true-color="#13ce66" false-color="#ff4949" @on-change="colorshowChange">
+        <template #open>
+          <span>颜色</span>
+        </template>
+        <template #close>
+          <span>纹理</span>
+        </template>
+      </Switch>
+    </Divider>
     <!-- 通用属性 -->
-    <div class="bg-item">
+    <div class="bg-item" v-if="colorShow">
       <Tooltip placement="top" theme="light">
         <div class="color-bar" :style="{ background: baseAttr.fill }"></div>
         <template #content>
@@ -29,6 +39,22 @@
           ></color-picker>
         </template>
       </Tooltip>
+    </div>
+    <div style="margin: 10px" v-if="!colorShow">
+      <!-- <Upload> -->
+      <Button type="primary" @click="changeTexture">字体纹理</Button>
+      <!-- </Upload> -->
+      <!-- 可以自己上传图片作为背景 -->
+      <Select
+        v-model="fontTextureDirection"
+        style="width: 150px; margin-left: 20px"
+        placeholder="纹理方向"
+        @on-change="changeTexture"
+      >
+        <Option v-for="item in fontTextureList" :value="item.value" :key="item.value">
+          {{ item.label }}
+        </Option>
+      </Select>
     </div>
     <!-- <Divider plain></Divider> -->
   </div>
@@ -46,7 +72,30 @@ const angleKey = 'gradientAngle';
 const baseAttr = reactive({
   fill: '#ffffffff',
 });
+const colorShow = ref(true);
+const fontTextureList = reactive([
+  {
+    label: 'repeat',
+    value: 'repeat',
+  },
+  {
+    label: 'repeat-x',
+    value: 'repeat-x',
+  },
+  {
+    label: 'repeat-y',
+    value: 'repeat-y',
+  },
+  {
+    label: 'no-repeat',
+    value: 'no-repeat',
+  },
+]);
 
+const fontTextureDirection = ref('repeat');
+const colorshowChange = () => {
+  colorShow.value = !colorShow.value;
+};
 // 属性获取
 const getObjectAttr = (e) => {
   const activeObject = canvasEditor.canvas.getActiveObject();
@@ -54,12 +103,32 @@ const getObjectAttr = (e) => {
   if (e && e.target && e.target !== activeObject) return;
   if (activeObject && mixinState.mSelectMode === 'one') {
     const fill = activeObject.get('fill');
-    if (typeof fill === 'string') {
+    if (typeof fill === 'string' && !fill.source) {
       baseAttr.fill = fill;
-    } else {
+    } else if (!fill.source) {
       baseAttr.fill = fabricGradientToCss(fill, activeObject);
+    } else {
+      colorShow.value = false;
+      return;
     }
   }
+};
+
+const changeTexture = () => {
+  const activeObject = canvasEditor.canvas.getActiveObject();
+  fabric.util.loadImage(
+    'https://img2.baidu.com/it/u=2480481019,3021646555&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1200',
+    function (img) {
+      activeObject.set(
+        'fill',
+        new fabric.Pattern({
+          source: img,
+          repeat: fontTextureDirection.value,
+        })
+      );
+      canvasEditor.canvas.renderAll();
+    }
+  );
 };
 
 const colorChange = (value) => {
@@ -89,6 +158,7 @@ const dropColor = (value) => {
 const fabricGradientToCss = (val, activeObject) => {
   // 渐变类型
   if (!val) return;
+  if (activeObject.fill.source) return;
   const angle = activeObject.get(angleKey, val.degree);
   const colorStops = val.colorStops.map((item) => {
     return item.color + ' ' + item.offset * 100 + '%';
@@ -147,6 +217,7 @@ onBeforeUnmount(() => {
   cursor: pointer;
   border: 2px solid #f6f7f9;
 }
+
 :deep(.ivu-input-number) {
   display: block;
   width: 100%;
@@ -155,6 +226,7 @@ onBeforeUnmount(() => {
 :deep(.ivu-tooltip) {
   display: flex;
 }
+
 .ivu-form-item {
   background: #f6f7f9;
   border-radius: 5px;
