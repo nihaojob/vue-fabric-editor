@@ -91,7 +91,9 @@ class WorkspacePlugin implements IPluginTempl {
       height,
       id: 'workspace',
       strokeWidth: 0,
+      erasable: false,
     });
+
     workspace.set('selectable', false);
     workspace.set('hasControls', false);
     workspace.hoverCursor = 'default';
